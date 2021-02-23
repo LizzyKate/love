@@ -1,0 +1,57 @@
+@font-face {
+	font-family: "Biotif-black";
+	src: url("./biotif/Biotif-Black.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Biotif-bold";
+	src: url("./biotif/Biotif-Bold.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Biotif-book";
+	src: url("./biotif/Biotif-Book.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Biotif-extrabold";
+	src: url("./biotif/Biotif-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Biotif-light";
+	src: url("./biotif/Biotif-Light.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Biotif-medium";
+	src: url("./biotif/Biotif-Medium.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Biotif";
+	src: url("./biotif/Biotif-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Biotif-semibold";
+	src: url("./biotif/Biotif-SemiBold.ttf") format("truetype");
+}
+
+.biotif {
+	font-family: "Biotif";
+}
+.biotif-semibold {
+	font-family: "Biotif-semibold";
+}
+.biotif-medium {
+	font-family: "Biotif-medium";
+}
+.biotif-light {
+	font-family: "Biotif-light";
+}
+.biotif-extrabold {
+	font-family: "Biotif-extrabold";
+}
+.biotif-book {
+	font-family: "Biotif-book";
+}
+.biotif-bold {
+	font-family: "Biotif-bold";
+}
+.biotif-black {
+	font-family: "Biotif-black";
+}
