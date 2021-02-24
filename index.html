@@ -9,165 +9,7 @@
 		<link rel="stylesheet" href="./main.css" />
 		<title>Farmsby</title>
 	</head>
-	<style>
-		.__button {
-			background: #3ed562;
-		}
-		.__about {
-			color: #3ed562;
-			font-size: 44px;
-		}
-		.navbar-fixed-top.scrolled {
-			background-color: #fff !important;
-			transition: background-color 200ms linear;
-			padding: 0.5rem 3rem 0.5rem 3rem;
-		}
-		.effect02 {
-			color: #25d04e;
-			background: transparent;
-			border: 2px solid #3ed562;
-			overflow: hidden;
-			position: relative;
-			transition: all 0.3s ease-in-out;
-		}
-		.effect02:hover {
-			background-color: #3ed562;
-			color: white;
-		}
-		.effect01 {
-			color: #fff;
-			background-color: #3ed562;
-			overflow: hidden;
-			position: relative;
-			transition: all 0.3s ease-in-out;
-		}
-		.effect01:hover {
-			background-color: transparent;
-			color: #3ed562;
-			border: 2px solid #3ed562;
-		}
 
-		.effect01:after,
-		.effect02:after {
-			background: #fff;
-			border: 0px solid #000;
-			content: "";
-			height: 155px;
-			left: -75px;
-			opacity: 0.8;
-			position: absolute;
-			top: -50px;
-			-webkit-transform: rotate(35deg);
-			transform: rotate(35deg);
-			width: 50px;
-			transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); /*easeOutCirc*/
-			z-index: 1;
-		}
-		.effect01:hover:after,
-		.effect02:hover:after {
-			background: #fff;
-			border: 20px solid #000;
-			opacity: 0;
-			left: 120%;
-			-webkit-transform: rotate(40deg);
-			transform: rotate(40deg);
-		}
-		.__max {
-			bottom: -155px;
-		}
-		.__width {
-			max-width: 18rem;
-		}
-		.bg_heart {
-			position: fixed;
-			top: 100px;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			overflow: hidden;
-		}
-
-		.heart {
-			position: absolute;
-			top: -50%;
-			-webkit-transform: rotate(-45deg);
-			-moz-transform: rotate(-45deg);
-			-m-transform: rotate(-45deg);
-			transform: rotate(-45deg);
-			z-index: 100;
-		}
-
-		.heart:before {
-			position: absolute;
-			top: -50%;
-			left: 0;
-			display: block;
-			content: "";
-			width: 100%;
-			height: 100%;
-			background: inherit;
-			border-radius: 100%;
-		}
-
-		.heart:after {
-			position: absolute;
-			top: 0;
-			right: -50%;
-			display: block;
-			content: "";
-			width: 100%;
-			height: 100%;
-			background: inherit;
-			border-radius: 100%;
-		}
-		.__small {
-			background-image: url("./image/mobile.jpeg");
-			background-size: cover;
-			background-repeat: no-repeat;
-			/* background-color: #e5e5e54d; */
-		}
-
-		@-webkit-keyframes love {
-			0% {
-				top: 110%;
-			}
-		}
-		@-moz-keyframes love {
-			0% {
-				top: 110%;
-			}
-		}
-		@-ms-keyframes love {
-			0% {
-				top: 110%;
-			}
-		}
-		@keyframes love {
-			0% {
-				top: 110%;
-			}
-		}
-
-		@media only screen and (max-width: 800px) {
-			.bg_heart {
-				position: fixed;
-				top: 0;
-			}
-			.__about {
-				font-size: 30px;
-			}
-			.navbar-fixed-top.scrolled {
-				background-color: #f2f2f2 !important;
-				transition: background-color 200ms linear;
-				padding: 0.3rem 1rem 0.3rem 1rem;
-			}
-		}
-		@media only screen and (min-width: 800px) {
-			body {
-				background: rgba(111, 207, 151, 0.08);
-			}
-		}
-	</style>
 	<body class="relative">
 		<nav
 			class="navbar-fixed-top fixed py-8 top-0 w-full z-50 flex justify-between items-center lg:px-20 px-8"
@@ -176,11 +18,13 @@
 				<img src="./image/image 3.png" class="w-3/4" alt="" />
 			</div>
 			<div class="lg:inline hidden">
-				<button
-					class="__button biotif tracking-wider text-white text-base px-12 py-3 rounded-md cursor-pointer focus:outline-none effect01"
-				>
-					Get Started
-				</button>
+				<a href="https://app.farmsby.com/login">
+					<button
+						class="__button biotif tracking-wider text-white text-base px-12 py-3 rounded-md cursor-pointer focus:outline-none effect01"
+					>
+						Get Started
+					</button>
+				</a>
 			</div>
 		</nav>
 		<div class="lg:pt-48 pt-40 text-center lg:px-0 px-4">
@@ -202,31 +46,38 @@
 			</div>
 			<div class="w-2/3 flex-grow">
 				<div class="flex flex-col relative">
-					<div class="flex space-x-4 items-center mx-auto">
+					<div class="flex space-x-4 items-center mx-auto relative z-50">
 						<div>
-							<button
-								class="border effect02 text-base font-semibold tracking-wider py-4 px-12 focus:outline-none rounded-md biotif"
-							>
-								View Our Website
-							</button>
+							<a href="https://farmsby.com/">
+								<button
+									class="cursor-pointer border effect02 text-base font-semibold tracking-wider py-4 px-12 focus:outline-none rounded-md biotif"
+								>
+									View Our Website
+								</button>
+							</a>
 						</div>
 						<div>
-							<button
-								class="effect01 text-base font-semibold py-4 px-12 tracking-wider focus:outline-none rounded-md biotif"
-							>
-								Get Started
-							</button>
+							<a href="https://app.farmsby.com/login">
+								<button
+									class="cursor-pointer effect01 text-base font-semibold py-4 px-12 tracking-wider focus:outline-none rounded-md biotif"
+								>
+									Get Started
+								</button>
+							</a>
 						</div>
 					</div>
-					<div class="absolute __max left-0 right-0">
+					<div class="absolute z-50 __max left-0 right-0">
 						<div class="flex space-x-8 justify-center items-center">
-							<a href="">
+							<a
+								href="https://www.facebook.com/FarmsbyHQ"
+								class="cursor-pointer"
+							>
 								<img src="./image/Vector.svg" alt="" />
 							</a>
-							<a href="">
+							<a href="http://instagram.com/farmsbyhq" class="cursor-pointer">
 								<img src="./image/Vector (1).svg" alt="" />
 							</a>
-							<a href="">
+							<a href="http://twitter.com/FarmsbyHQ" class="cursor-pointer">
 								<img src="./image/Vector (2).svg" alt="" />
 							</a>
 						</div>
@@ -239,24 +90,26 @@
 		</div>
 		<div class="mt-8 py-8 flex flex-col items-center lg:hidden block __small">
 			<div>
-				<button
-					class="effect01 text-base font-semibold py-4 px-12 tracking-wider focus:outline-none rounded-md biotif"
-				>
-					Get Started
-				</button>
+				<a href="https://app.farmsby.com/login">
+					<button
+						class="effect01 text-base font-semibold py-4 px-12 tracking-wider focus:outline-none rounded-md biotif"
+					>
+						Get Started
+					</button>
+				</a>
 			</div>
 			<div class="mt-16">
 				<img src="./image/farmsbyy.svg" class="__width w-full mx-auto" alt="" />
 			</div>
 			<div class="my-12">
 				<div class="flex space-x-8 justify-center items-center">
-					<a href="">
+					<a href="https://www.facebook.com/FarmsbyHQ" class="cursor-pointer">
 						<img src="./image/Vector.svg" alt="" />
 					</a>
-					<a href="">
+					<a href="http://instagram.com/farmsbyhq" class="cursor-pointer">
 						<img src="./image/Vector (1).svg" alt="" />
 					</a>
-					<a href="">
+					<a href="http://twitter.com/FarmsbyHQ" class="cursor-pointer">
 						<img src="./image/Vector (2).svg" alt="" />
 					</a>
 				</div>
